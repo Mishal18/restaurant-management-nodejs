@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const categorySchema = new mongoose.Schema({
+const itemSchema = new mongoose.Schema({
     name : {
         type : String,
         required : true
@@ -9,5 +9,5 @@ const categorySchema = new mongoose.Schema({
         required : true
     }
 })
-const Category = mongoose.model('Category', categorySchema)
-module.exports = Category; 
+const Item = mongoose.model('Item', itemSchema)
+module.exports = Item; 
